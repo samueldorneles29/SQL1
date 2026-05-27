@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS produtos (
+    id_produtos INTEGER PRIMARY KEY AUTOINCREMENT,
+    descrição TEXT NOT NULL,
+    valor_unit TEXT NOT NULL,
+    tipo_prod TEXT NOT NULL
+);
+
+INSERT INTO produtos(descrição,valor_unit,tipo_prod)
+VALUES ('elevador de aura', '77,77', 'comida');
+
+SELECT * FROM produtos;
